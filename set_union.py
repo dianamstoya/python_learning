@@ -15,14 +15,15 @@ from prescription_data import adverse_interactions
 meds_to_watch = set()
 
 # for interaction in adverse_interactions:
-#     # meds_to_watch = meds_to_watch.union(interaction)
-#     # meds_to_watch = meds_to_watch | interaction
-#     # now INPLACE instead of creating new set
-#     # meds_to_watch.update(interaction)
-#     meds_to_watch |= interaction
+    # creates new set in the process
+    # meds_to_watch = meds_to_watch.union(interaction)
+    # meds_to_watch = meds_to_watch | interaction
+    # NOW INPLACE instead of creating new set - like extend!!
+    # meds_to_watch.update(interaction)
+    # meds_to_watch |= interaction  # same as above
 
-# unpack the list:
+# UNPACK the list:
 meds_to_watch.update(*adverse_interactions)
 
-print(sorted(meds_to_watch))
-print(*sorted(meds_to_watch), sep="\n")
+print(sorted(meds_to_watch))  # sorted turns it into list
+# print(*sorted(meds_to_watch), sep="\n")

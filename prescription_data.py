@@ -1,5 +1,5 @@
 # drugs
-amlodipine = ("amlodipine", "Blood pressure")
+amlodipine = ("Amlodipine", "Blood pressure")
 buspirone = ("buspirone", "Anxiety disorders")
 carbimazole = ("carbimazole", "Antithyroid agent")
 citalopram = ("citalopram", "Antidepressant")
