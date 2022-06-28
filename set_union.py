@@ -6,7 +6,7 @@
 #
 # all_animals_2 = wild_animals.union(farm_animals)
 # print(all_animals_2)
-# # with a union operator
+# with a union operator: |
 # all_animals_3 = wild_animals | farm_animals
 # print(all_animals_3)
 
@@ -26,4 +26,4 @@ meds_to_watch = set()
 meds_to_watch.update(*adverse_interactions)
 
 print(sorted(meds_to_watch))  # sorted turns it into list
-# print(*sorted(meds_to_watch), sep="\n")
+print(*sorted(meds_to_watch), sep="\n")
